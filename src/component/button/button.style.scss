@@ -1,0 +1,30 @@
+.button { 
+    width: 5vw;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    padding: 0 35px 0 35px;
+    background-color: rgb(19, 171, 236);
+    color: white;
+    font-family: 'Open Sans Condensed';
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border: 1px solid  rgb(19, 171, 236);
+    border-radius: 10px;
+    margin: 5px;
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+    &.outline{
+        background-color: rgb(162, 216, 240);
+    }&:disabled,
+    button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+    }
+} 
