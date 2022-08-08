@@ -34,16 +34,13 @@ const SecondForm = ({defualtFormFeilds, formChange, validateForm})=>{
           <h3 className="form-hedding"> Email</h3>
            <Input 
             errorMessage={InvalidForm.errors.email}
-            valid={InvalidForm.errors.email.length > 0}
+            valid={!(InvalidForm.errors.email.length > 0)}
             name="email"
             placeholder="Email"
             value={email}
             onChange={onChangeHandler}
            />
-            {
-            InvalidForm.errors.email.length > 0 && 
-                <span className='error'>{InvalidForm.errors.email}</span>
-                }
+            
     </div>
     )
 }
