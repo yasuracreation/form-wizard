@@ -1,6 +1,7 @@
-.form-input-group{
+.form-input-group {
     width: 100%;
-    & .form-input{
+
+    & .form-input {
         background: none;
         background-color: white;
         font-size: 18px;
@@ -9,28 +10,21 @@
         width: 100%;
         border: none;
         border-radius: 0;
-        border-bottom: 1px solid ;
+        border-bottom: 1px solid;
         margin: 25px 0;
 
         &:focus {
-        outline: none;
-        }
-        &.error{
-            border-bottom: 1px;
-            border-bottom: 2px dotted;
-            border-bottom: medium dashed rgb(255, 0, 0);
-            
-            /* Global values */
-            border-bottom: inherit;
-            border-bottom: initial;
-            border-bottom: revert;
-            border-bottom: revert-layer;
-            border-bottom: unset;
+            outline: none;
         }
 
-    
+        &.error {
+            border-bottom: 2px solid;
+        }
+
+
     }
 }
-.error{
+
+.error {
     color: red;
 }
